@@ -1,14 +1,15 @@
 package crypto_test
 
 import (
-	"github.com/mastercard/oauth1-signer-go/crypto"
-	"github.com/mastercard/oauth1-signer-go/utils"
 	"testing"
+
+	"github.com/GreenHedgehog/oauth1-signer-go/crypto"
+	"github.com/GreenHedgehog/oauth1-signer-go/utils"
 )
 
 const (
 	sha256Length = 32
-	sha1Length = 20
+	sha1Length   = 20
 )
 
 func TestSHA256Hash(t *testing.T) {

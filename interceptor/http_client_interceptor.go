@@ -3,8 +3,8 @@
 package interceptor
 
 import (
-	"github.com/mastercard/oauth1-signer-go"
-	"github.com/mastercard/oauth1-signer-go/utils"
+	"github.com/GreenHedgehog/oauth1-signer-go"
+	"github.com/GreenHedgehog/oauth1-signer-go/utils"
 	"net/http"
 )
 

@@ -3,8 +3,8 @@ package oauth_test
 import (
 	"bytes"
 	"encoding/json"
-	oauth "github.com/mastercard/oauth1-signer-go"
-	"github.com/mastercard/oauth1-signer-go/utils"
+	oauth "github.com/GreenHedgehog/oauth1-signer-go"
+	"github.com/GreenHedgehog/oauth1-signer-go/utils"
 	"net/http"
 	"testing"
 )

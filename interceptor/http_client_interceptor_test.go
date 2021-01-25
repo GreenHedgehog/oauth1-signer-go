@@ -1,7 +1,7 @@
 package interceptor_test
 
 import (
-	"github.com/mastercard/oauth1-signer-go/interceptor"
+	"github.com/GreenHedgehog/oauth1-signer-go/interceptor"
 	"net/http"
 	"testing"
 )

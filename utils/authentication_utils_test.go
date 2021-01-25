@@ -1,7 +1,7 @@
 package utils_test
 
 import (
-	"github.com/mastercard/oauth1-signer-go/utils"
+	"github.com/GreenHedgehog/oauth1-signer-go/utils"
 	"testing"
 )
 

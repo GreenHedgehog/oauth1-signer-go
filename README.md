@@ -1,11 +1,11 @@
 # oauth1-signer-go
 
-[![](https://github.com/Mastercard/oauth1-signer-go/workflows/Build%20&%20Test/badge.svg)](https://github.com/Mastercard/oauth1-signer-go/actions?query=workflow%3A%22Build+%26+Test%22)
-[![](https://goreportcard.com/badge/github.com/Mastercard/oauth1-signer-go)](https://goreportcard.com/report/github.com/Mastercard/oauth1-signer-go)
+[![](https://github.com/GreenHedgehog/oauth1-signer-go/workflows/Build%20&%20Test/badge.svg)](https://github.com/GreenHedgehog/oauth1-signer-go/actions?query=workflow%3A%22Build+%26+Test%22)
+[![](https://goreportcard.com/badge/github.com/GreenHedgehog/oauth1-signer-go)](https://goreportcard.com/report/github.com/GreenHedgehog/oauth1-signer-go)
 [![](https://sonarcloud.io/api/project_badges/measure?project=Mastercard_oauth1-signer-go&metric=alert_status)](https://sonarcloud.io/dashboard?id=Mastercard_oauth1-signer-go)
-[![](https://github.com/Mastercard/oauth1-signer-go/workflows/broken%20links%3F/badge.svg)](https://github.com/Mastercard/oauth1-signer-go/actions?query=workflow%3A%22broken+links%3F%22)
-[![](https://img.shields.io/badge/godoc-reference-5272B4.svg)](https://godoc.org/github.com/Mastercard/oauth1-signer-go)
-[![](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/Mastercard/oauth1-signer-go/blob/master/LICENSE)
+[![](https://github.com/GreenHedgehog/oauth1-signer-go/workflows/broken%20links%3F/badge.svg)](https://github.com/GreenHedgehog/oauth1-signer-go/actions?query=workflow%3A%22broken+links%3F%22)
+[![](https://img.shields.io/badge/godoc-reference-5272B4.svg)](https://godoc.org/github.com/GreenHedgehog/oauth1-signer-go)
+[![](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/GreenHedgehog/oauth1-signer-go/blob/master/LICENSE)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -41,14 +41,14 @@ As part of this set up, you'll receive credentials for your app:
 
 ####
 ```go
-import github.com/mastercard/oauth1-signer-go
+import github.com/GreenHedgehog/oauth1-signer-go
 ```
 
 ### Loading the Signing Key <a name="loading-the-signing-key"></a>
 
 A `signingKey` can be created by calling the `utils.LoadSigningKey` function:
 ```go
-import "github.com/mastercard/oauth1-signer-go/utils"
+import "github.com/GreenHedgehog/oauth1-signer-go/utils"
 
 //...
 signingKey, err := utils.LoadSigningKey(
@@ -61,7 +61,7 @@ signingKey, err := utils.LoadSigningKey(
 The function that does all the heavy lifting is `OAuth.GetAuthorizationHeader`. You can call into it directly and as long as you provide the correct parameters, it will return a string that you can add into your request's `Authorization` header.
 
 ```go
-import "github.com/mastercard/oauth1-signer-go"
+import "github.com/GreenHedgehog/oauth1-signer-go"
 
 //...
 consumerKey := "<insert consumer key>"
@@ -79,7 +79,7 @@ Alternatively, you can use helper function for http request.
 Usage briefly described below, but you can also refer to the test package for examples. 
 
 ```go
-import "github.com/mastercard/oauth1-signer-go"
+import "github.com/GreenHedgehog/oauth1-signer-go"
 
 //...
 payload := "<insert payload>"
@@ -97,7 +97,7 @@ err = signer.Sign(request)
 [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) generates API client libraries from [OpenAPI Specs](https://github.com/OAI/OpenAPI-Specification). 
 It provides generators and library templates for supporting multiple languages and frameworks.
 
-The `github.com/mastercard/oauth1-signer-go/interceptor` package provides you function for http request interception you can use when configuring your API client. This function takes care of adding the correct `Authorization` header before sending the request.
+The `github.com/GreenHedgehog/oauth1-signer-go/interceptor` package provides you function for http request interception you can use when configuring your API client. This function takes care of adding the correct `Authorization` header before sending the request.
 
 Generators currently supported:
 + [Go](#go)
@@ -115,10 +115,10 @@ See also:
 * [OpenAPI Generator (executable)](https://mvnrepository.com/artifact/org.openapitools/openapi-generator-cli)
 * [CONFIG OPTIONS for Go](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/go.md)
 
-##### Usage of the github.com/mastercard/oauth1-signer-go/interceptor
+##### Usage of the github.com/GreenHedgehog/oauth1-signer-go/interceptor
 
 ```go
-import "github.com/mastercard/oauth1-signer-go/interceptor"
+import "github.com/GreenHedgehog/oauth1-signer-go/interceptor"
 
 //...
 configuration := openapi.NewConfiguration()

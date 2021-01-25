@@ -2,10 +2,11 @@ package oauth
 
 import (
 	"crypto/rsa"
-	"github.com/mastercard/oauth1-signer-go/utils"
 	"net/url"
 	"reflect"
 	"testing"
+
+	"github.com/GreenHedgehog/oauth1-signer-go/utils"
 )
 
 func TestExtractQueryParams_ShouldSupportDuplicateKeysAndEmptyValues(t *testing.T) {

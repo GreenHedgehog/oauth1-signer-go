@@ -8,12 +8,13 @@ import (
 	"crypto/rsa"
 	"encoding/base64"
 	"fmt"
-	"github.com/mastercard/oauth1-signer-go/crypto"
 	"net/url"
 	"sort"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/GreenHedgehog/oauth1-signer-go/crypto"
 )
 
 const (
@@ -32,7 +33,7 @@ const (
 	oauthBodyHashParam        = "oauth_body_hash"
 	defaultOauthVersion       = "1.0"
 	sha256HashingAlgorithm    = "SHA256"
-	sha1HashingAlgorithm    = "SHA1"
+	sha1HashingAlgorithm      = "SHA1"
 )
 
 // GetAuthorizationHeader creates a Mastercard API compliant OAuth Authorization header.
