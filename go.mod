@@ -1,4 +1,4 @@
-module github.com/mastercard/oauth1-signer-go
+module github.com/GreenHedgehog/oauth1-signer-go
 
 go 1.12
 
